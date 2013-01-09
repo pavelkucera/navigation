@@ -1,0 +1,26 @@
+{
+	"name": "pavelkucera/navigation",
+	"type": "library",
+	"keywords": ["nette", "navigation", "control", "breadcrumbs"],
+	"license": ["BSD-3-Clause"],
+	"authors": [
+		{
+			"name": "Pavel Kučera"
+		}
+	],
+
+	"require": {
+		"php": ">=5.3.0",
+		"nette/nette": "*"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "3.7.*"
+	},
+
+	"autoload": {
+		"psr-0": {
+			"PK": "./"
+		}
+	},
+	"target-dir": "PK"
+}
