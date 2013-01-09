@@ -1,0 +1,10 @@
+<ul>
+	{#items}
+	<li n:foreach="$items as $item" n:class="$item->active ? active">
+		<a href="{plink $item->link}" n:tag-if="$item->link">{$item->label}</a>
+		<ul n:if="$item->children">
+			{include #items, items => $item->children}
+		</ul>
+	</li>
+	{/#}
+</ul>
