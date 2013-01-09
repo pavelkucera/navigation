@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<phpunit
+        stopOnError="false"
+        stopOnFailure="false"
+        stopOnIncomplete="false"
+        stopOnSkipped="false"
+
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true"
+
+        bootstrap="tests/bootstrap.php"
+        colors="true"
+        >
+    <testsuites>
+        <testsuite name="Navigation Test Suite">
+            <directory suffix="Test.php">./tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <blacklist>
+            <directory suffix=".php">./vendor</directory>
+            <directory suffix=".php">./tests</directory>
+        </blacklist>
+        <whitelist addUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./Navigation</directory>
+        </whitelist>
+    </filter>
+</phpunit>
