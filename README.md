@@ -9,6 +9,12 @@ BSD 3-Clause
 - [the Nette Framework](http://nette.org) any version
 - php >= 5.3.0
 
+## Installation
+Through composer:
+```
+$ composer install pavelkucera/navigation
+```
+
 ## Usage
 
 ### I wanna a navigation now!
